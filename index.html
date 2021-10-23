@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id='title'>Survey Form</h1>
+  <p id='description'>Let us know about our attendance quality!</p>
+  <main>
+    <form id='survey-form'>
+      <label for='name' id='name-label'>Name</label>
+      <br>
+      <input type='text' id='name' placeholder='Your Name' required>
+      <br>
+      <label for='email' id='email-label'>Email</label>
+      <br>
+      <input type='email' id='email' placeholder='Your Email' required>
+      <br>
+      <label for='age' id='number-label'>Age</label>
+      <br>
+      <input type='number' id='number' min='1' max='50' placeholder='Your Age'>
+      <br>
+      <label for='dropdown-label' id='dropdown-label'>Do you have any experience with our services?</label>
+      <br>
+      <select name='dropdown' id='dropdown'>
+        <option value='yes'>Yes</option>
+        <option value='no'>No</option>
+      </select>
+      <br>
+      <p>Rate Our Service!</p>
+      <input type='radio' id='bad' name='rating' value='Bad'>
+      <label for='bad' class='ratings'>Bad</label>
+      <br>
+      <input type='radio' id='good' value='Good' name='rating'>
+      <label for='good' class='ratings'>Good</label>
+      <br>
+      <input type='radio' id='excellent' name='rating' value='Excellent'>
+      <label for='excellent' class='ratings'>Excellent</label>
+      <br>
+      <p>What did you liked more about our services?</p>
+      <input type='checkbox' id='agility' value='Agility'>
+      <label for='Agility' class='qualities'>Agility</label>
+      <br>
+      <input type='checkbox' id='education' value='Education'>
+   <label for='education' class='qualities'>Education</label>
+      <br>
+      <input type='checkbox' id='information' value='Information'>
+      <label for='information' class='qualities'>Information</label>
+      <p>Your opinion matters a lot to us!</p>
+      <textarea rows='10' columns='70' placeholder='Write something about us here!'></textarea>
+      <br>
+      <input type='submit' value='Submit' id='submit'>
+    </form>
+  </main>
+</body>
+</html>
