@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+  background-color: #4B6CBF;
+}
+
+main{
+  background-color: #2D4173;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 10px;
+  border-radius: 10px
+}
+
+form{
+  color: #ffffff;
+  font: normal 400 20px 'Work Sans';
+}
+
+h1, p{
+  text-align: center;
+  color: #ffffff;
+  font: normal 400 20px 'Work Sans';
+}
+
+
+#name, #email, #number{
+  margin: 5px 30px 5px;
+  width: 90%;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  outline: none;
+}
+
+label{
+  margin: 0 30px 5px; 
+}
+
+#dropdown{
+  width: 90.5%;
+  height: 7%;
+  margin: 5px 30px 5px;
+  font-size: 20px;
+  outline: none;
+}
+
+input[type='radio']{
+  margin-left: 5%;
+}
+
+input[type='checkbox']{
+  margin-left: 5%  
+}
+
+
+.ratings{
+  margin-left: 5px;
+}
+
+.qualities{
+  margin-left: 5px;
+}
+
+textarea{
+  outline: none;
+  text-align: left;
+  margin-left: 5%;
+  width: 89%;
+  font-size: 20px;
+}
+
+input[type='submit']{
+  width: 80px;
+  margin-left: 45%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1078px){
+  #name, #number, #email{
+    width: 80%
+  }
+  
+  #dropdown-label{
+    font-size: 13px;
+    
+  }
+  
+  #dropdown{
+    width: 81%
+  }
+  
+  main{
+    width: 80%;
+    margin-left: 11%
+  }
+  
+  input[type='submit']{
+    margin-left: 40%
+  }
+}
