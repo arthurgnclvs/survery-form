@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 body{
@@ -70,14 +72,22 @@ textarea{
 }
 
 input[type='submit']{
-  width: 80px;
-  margin-left: 45%;
+  background-image: linear-gradient(360deg, #2D4173, #4B6CBF);
+  color: #ffffff;
+  border-style: none;
+  width: 20%;
+  margin-left: 40%;
   margin-bottom: 10px;
+  
 }
 
 @media (max-width: 1078px){
+  *{
+    font-size: 30px !important;
+  }
+
   #name, #number, #email{
-    width: 80%
+    width: 93%
   }
   
   #dropdown-label{
@@ -86,7 +96,7 @@ input[type='submit']{
   }
   
   #dropdown{
-    width: 81%
+    width: 93%
   }
   
   main{
@@ -95,6 +105,22 @@ input[type='submit']{
   }
   
   input[type='submit']{
-    margin-left: 40%
+    margin-left: 40%;
+    width: 30%;
+  }
+}
+
+@media (max-width: 700px){
+  #name, #number, #email{
+    width: 85%
+  }
+
+  #dropdown{
+    width: 81%
+  }
+
+  input[type='submit']{
+    width: 50%;
+    margin-left: 25%
   }
 }
